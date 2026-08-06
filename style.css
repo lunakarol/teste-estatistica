@@ -1,0 +1,587 @@
+
+
+/* ============================= */
+/* RESET */
+/* ============================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+}
+
+/* ============================= */
+/* TELAS */
+/* ============================= */
+
+.tela{
+    display:none;
+    min-height:100vh;
+    padding:40px 20px;
+    animation:fade .4s;
+}
+
+.tela.ativa{
+    display:block;
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ============================= */
+/* CABEÇALHO */
+/* ============================= */
+
+.cabecalho{
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+
+.cabecalho h1{
+
+    color:#45b436;
+
+    font-size:70px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+.cabecalho p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+/* ============================= */
+/* VIDEO */
+/* ============================= */
+
+
+/* ============================= */
+/* CARD DO JOGO */
+/* ============================= */
+
+.cardJogo{
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    background:#45b436;
+
+    color:white;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+.cardJogo h2{
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
+}
+
+.cardJogo p{
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+}
+
+.cardJogo button{
+
+    border:none;
+
+    background:white;
+
+    color:#222;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    border-radius:50px;
+
+    padding:18px 70px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cardJogo button:hover{
+
+    background:#c7ff68;
+
+    transform:scale(1.05);
+
+}
+
+/* ============================= */
+/* ACCORDION */
+/* ============================= */
+
+.accordion{
+
+    max-width:900px;
+
+    margin:40px auto;
+
+}
+
+details{
+
+    margin-bottom:18px;
+
+    background:#45b436;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+}
+
+summary{
+
+    list-style:none;
+
+    cursor:pointer;
+
+    padding:22px;
+
+    text-align:center;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:black;
+
+}
+
+summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+details p{
+
+    background:white;
+
+    padding:25px;
+
+    line-height:1.7;
+
+    font-size:18px;
+
+}
+
+/* ============================= */
+/* QUIZ */
+/* ============================= */
+
+header{
+
+    text-align:center;
+
+}
+
+header h1{
+
+    color:#45b436;
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.placar{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    font-size:22px;
+
+    margin-bottom:40px;
+
+}
+
+.quiz{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:#45b436;
+
+    border-radius:30px;
+
+    padding:40px;
+
+}
+
+#pergunta{
+
+    color:white;
+
+    text-align:center;
+
+    line-height:1.6;
+
+    margin-bottom:45px;
+
+}
+
+/* ============================= */
+/* ALTERNATIVAS */
+/* ============================= */
+
+.alternativas{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.alternativa{
+
+    border:none;
+
+    padding:25px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    background:white;
+
+}
+
+.alternativa:hover{
+
+    background:#c7ff68;
+
+    transform:translateY(-4px);
+
+}
+
+/* resposta correta */
+
+.correta{
+
+    background:#28a745 !important;
+
+    color:white;
+
+}
+
+/* resposta errada */
+
+.errada{
+
+    background:#dc3545 !important;
+
+    color:white;
+
+}
+
+/* ============================= */
+
+#feedback{
+
+    text-align:center;
+
+    margin-top:35px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:white;
+
+    min-height:40px;
+
+}
+
+/* ============================= */
+
+#btnProxima{
+
+    display:block;
+
+    margin:35px auto 0;
+
+    border:none;
+
+    background:#c7ff68;
+
+    padding:18px 60px;
+
+    border-radius:40px;
+
+    font-size:26px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+/* ============================= */
+
+footer{
+
+    text-align:center;
+
+    margin-top:35px;
+
+}
+
+#voltarInicio{
+
+    border:none;
+
+    background:#c7ff68;
+
+    padding:18px 40px;
+
+    border-radius:30px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+/* ============================= */
+/* RESULTADO */
+/* ============================= */
+
+#telaFinal{
+
+    text-align:center;
+
+}
+
+#telaFinal h1{
+
+    color:#45b436;
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.resultado{
+
+    width:350px;
+
+    margin:50px auto;
+
+    background:#c7ff68;
+
+    padding:35px;
+
+    border-radius:25px;
+
+}
+
+.resultado h2{
+
+    margin-bottom:15px;
+
+}
+
+#resultadoFinal{
+
+    color:black;
+
+    margin-top:20px;
+
+    font-size:60px;
+
+}
+
+#mensagemFinal{
+
+    font-size:30px;
+
+    margin-bottom:40px;
+
+    font-weight:700;
+
+}
+
+.botoesFinais{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.botoesFinais button{
+
+    border:none;
+
+    background:#45b436;
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    padding:20px 45px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.botoesFinais button:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ============================= */
+/* RESPONSIVO */
+/* ============================= */
+
+@media(max-width:900px){
+
+    .cabecalho h1,
+    header h1,
+    #telaFinal h1{
+
+        font-size:52px;
+
+    }
+
+    .alternativas{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .alternativa{
+
+        font-size:22px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .cabecalho h1,
+    header h1,
+    #telaFinal h1{
+
+        font-size:42px;
+
+    }
+
+    .placar{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    .cardJogo{
+
+        padding:25px;
+
+    }
+
+    .cardJogo button{
+
+        width:100%;
+
+    }
+
+    .botoesFinais{
+
+        flex-direction:column;
+
+    }
+
+    .botoesFinais button{
+
+        width:100%;
+
+    }
+
+    summary{
+
+        font-size:22px;
+
+    }
+
+}

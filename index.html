@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Educativo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ========================================================= -->
+<!-- TELA 1 -->
+<!-- ========================================================= -->
+
+<section id="telaInicio" class="tela ativa">
+
+    <header class="cabecalho">
+        <h1>TÍTULO</h1>
+        <p>
+            Pequena descrição do conteúdo.
+            Você poderá substituir este texto depois.
+        </p>
+    </header>
+
+    <!-- Área do vídeo -->
+
+   
+
+
+    <!-- Card do jogo -->
+
+    <section class="cardJogo">
+
+        <h2>Quiz</h2>
+
+        <p>
+            Faça o quiz e descubra quanto aprendeu sobre o conteúdo.
+        </p>
+
+        <button id="btnJogar">
+            Jogar
+        </button>
+
+    </section>
+
+    <!-- Accordion -->
+
+    <section class="accordion">
+
+        <details>
+            <summary>Tema 1</summary>
+            <p>Texto genérico...</p>
+        </details>
+
+        <details>
+            <summary>Tema 2</summary>
+            <p>Texto genérico...</p>
+        </details>
+
+        <details>
+            <summary>Tema 3</summary>
+            <p>Texto genérico...</p>
+        </details>
+
+        <details>
+            <summary>Tema 4</summary>
+            <p>Texto genérico...</p>
+        </details>
+
+        <details>
+            <summary>Tema 5</summary>
+            <p>Texto genérico...</p>
+        </details>
+
+        <details>
+            <summary>Tema 6</summary>
+            <p>Texto genérico...</p>
+        </details>
+
+        <details>
+            <summary>Tema 7</summary>
+            <p>Texto genérico...</p>
+        </details>
+
+        <details>
+            <summary>Tema 8</summary>
+            <p>Texto genérico...</p>
+        </details>
+
+        <details>
+            <summary>Tema 9</summary>
+            <p>Texto genérico...</p>
+        </details>
+
+    </section>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- TELA 2 -->
+<!-- ========================================================= -->
+
+<section id="telaQuiz" class="tela">
+
+    <header>
+
+        <h1>TEMÁTICA</h1>
+
+        <div class="placar">
+
+            <span>
+                Pergunta:
+                <strong id="numeroPergunta">
+                    1
+                </strong>
+                /10
+            </span>
+
+            <span>
+                Acertos:
+                <strong id="acertos">
+                    0
+                </strong>
+                /10
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <main class="quiz">
+
+        <h2 id="pergunta">
+            Pergunta aparecerá aqui...
+        </h2>
+
+        <div class="alternativas">
+
+            <button class="alternativa" data-id="0">
+                Alternativa A
+            </button>
+
+            <button class="alternativa" data-id="1">
+                Alternativa B
+            </button>
+
+            <button class="alternativa" data-id="2">
+                Alternativa C
+            </button>
+
+            <button class="alternativa" data-id="3">
+                Alternativa D
+            </button>
+
+        </div>
+
+        <div id="feedback">
+
+            Feedback da resposta
+
+        </div>
+
+        <button id="btnProxima">
+
+            Próxima pergunta
+
+        </button>
+
+    </main>
+
+    <footer>
+
+        <button id="voltarInicio">
+
+            Voltar ao Menu
+
+        </button>
+
+    </footer>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- TELA 3 -->
+<!-- ========================================================= -->
+
+<section id="telaFinal" class="tela">
+
+    <h1>Parabéns!</h1>
+
+    <p>
+
+        Você concluiu o quiz.
+
+    </p>
+
+    <div class="resultado">
+
+        <h2>
+
+            Resultado Final
+
+        </h2>
+
+        <p>
+
+            Você acertou
+
+        </p>
+
+        <h1 id="resultadoFinal">
+
+            0/10
+
+        </h1>
+
+    </div>
+
+    <div id="mensagemFinal">
+
+        Excelente desempenho!
+
+    </div>
+
+    <div class="botoesFinais">
+
+        <button id="jogarNovamente">
+
+            Jogar Novamente
+
+        </button>
+
+        <button id="menuPrincipal">
+
+            Voltar ao Menu Principal
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
