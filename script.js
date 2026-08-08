@@ -23,6 +23,13 @@ const acertosTexto = document.getElementById("acertos");
 const resultadoFinal = document.getElementById("resultadoFinal");
 const mensagemFinal = document.getElementById("mensagemFinal");
 
+
+// video 
+
+document.getElementById("botaoVideo").addEventListener("click", function() {
+    window.open("https://www.youtube.com/", "_blank");
+});
+
 //==============================
 // PERGUNTAS
 //==============================
